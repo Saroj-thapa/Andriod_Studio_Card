@@ -54,7 +54,7 @@ class Card : ComponentActivity() {
 fun ProfileBody(innerPadding: PaddingValues) {
     Column ( modifier =  Modifier.padding(innerPadding)
         .fillMaxSize().background(color = Color(0xFF00C781)).padding(16.dp)){
-        Row(modifier = Modifier.padding(end = 16.dp),
+        Row(modifier = Modifier.padding(end = 16.dp).fillMaxWidth(),
             horizontalArrangement = Arrangement.End,
             verticalAlignment = Alignment.CenterVertically){
             Image(
@@ -79,8 +79,9 @@ fun ProfileBody(innerPadding: PaddingValues) {
         .fillMaxWidth()
         .padding(horizontal = 10.dp, vertical = 10.dp)){
         Card(modifier = Modifier.height(170.dp).weight(1f)) {
-            Row (
-                verticalAlignment = Alignment.CenterVertically,
+            Column (
+                verticalArrangement = Arrangement.Center,
+                horizontalAlignment = Alignment.CenterHorizontally,
                 modifier = Modifier.padding(16.dp)
             ){
                 Image(
@@ -88,7 +89,8 @@ fun ProfileBody(innerPadding: PaddingValues) {
                     contentDescription = "Image description",
                     modifier = Modifier.size(64.dp)
                 )
-                Text(text = "Text", style = TextStyle(fontSize = 15.sp, fontWeight = FontWeight.Bold))
+
+                Text(text = "Text", style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold))
 
 
             }
@@ -96,8 +98,9 @@ fun ProfileBody(innerPadding: PaddingValues) {
         }
             Spacer(modifier = Modifier.width(10.dp))
             Card(modifier = Modifier.height(170.dp).weight(1f)){
-                Row (
-                    verticalAlignment = Alignment.CenterVertically,
+                Column (
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.padding(16.dp)
                 ){
                     Image(
@@ -105,7 +108,7 @@ fun ProfileBody(innerPadding: PaddingValues) {
                         contentDescription = "Image description",
                         modifier = Modifier.size(64.dp)
                     )
-                    Text(text = "Address", style = TextStyle(fontSize = 15.sp, fontWeight = FontWeight.Bold))
+                    Text(text = "Address", style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold))
 
 
                 }
@@ -116,8 +119,9 @@ fun ProfileBody(innerPadding: PaddingValues) {
             .fillMaxWidth()
             .padding(horizontal = 10.dp, vertical = 10.dp)){
             Card(modifier = Modifier.height(170.dp).weight(1f)) {
-                Row (
-                    verticalAlignment = Alignment.CenterVertically,
+                Column (
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.padding(16.dp)
                 ){
                     Image(
@@ -126,7 +130,7 @@ fun ProfileBody(innerPadding: PaddingValues) {
                         modifier = Modifier.size(64.dp)
                     )
 
-                    Text(text = "Character", style = TextStyle(fontSize = 15.sp, fontWeight = FontWeight.Bold))
+                    Text(text = "Character", style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold))
 
 
                 }
@@ -134,8 +138,9 @@ fun ProfileBody(innerPadding: PaddingValues) {
             }
             Spacer(modifier = Modifier.width(10.dp))
             Card(modifier = Modifier.height(170.dp).weight(1f)){
-                Row (
-                    verticalAlignment = Alignment.CenterVertically,
+                Column (
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.padding(16.dp)
                 ){
                     Image(
@@ -144,7 +149,7 @@ fun ProfileBody(innerPadding: PaddingValues) {
                         modifier = Modifier.size(64.dp)
                     )
                     Spacer(modifier = Modifier.width(16.dp))
-                    Text(text = "bank", style = TextStyle(fontSize = 15.sp, fontWeight = FontWeight.Bold))
+                    Text(text = "bank", style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold))
 
 
                 }
@@ -154,8 +159,9 @@ fun ProfileBody(innerPadding: PaddingValues) {
             .fillMaxWidth()
             .padding(horizontal = 10.dp, vertical = 10.dp)){
             Card(modifier = Modifier.height(170.dp).weight(1f)) {
-                Row (
-                    verticalAlignment = Alignment.CenterVertically,
+                Column (
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.padding(16.dp)
                 ){
                     Image(
@@ -164,15 +170,16 @@ fun ProfileBody(innerPadding: PaddingValues) {
                         modifier = Modifier.size(64.dp)
                     )
                     Spacer(modifier = Modifier.width(16.dp))
-                    Text(text = "Password", style = TextStyle(fontSize = 15.sp, fontWeight = FontWeight.Bold))
+                    Text(text = "Password", style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold))
 
 
                 }
             }
             Spacer(modifier = Modifier.width(10.dp))
             Card(modifier = Modifier.height(170.dp).weight(1f)){
-                Row (
-                    verticalAlignment = Alignment.CenterVertically,
+                Column (
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally,
                     modifier = Modifier.padding(16.dp)
                 ){
                     Image(
@@ -181,7 +188,7 @@ fun ProfileBody(innerPadding: PaddingValues) {
                         modifier = Modifier.size(64.dp)
                     )
                     Spacer(modifier = Modifier.width(16.dp))
-                    Text(text = "Logistics", style = TextStyle(fontSize = 15.sp, fontWeight = FontWeight.Bold))
+                    Text(text = "Logistics", style = TextStyle(fontSize = 25.sp, fontWeight = FontWeight.Bold))
 
 
                 }
@@ -191,6 +198,7 @@ fun ProfileBody(innerPadding: PaddingValues) {
         Row { Card(modifier = Modifier.height(100.dp).width(600.dp)){
             Row (
                 verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.Center,
                 modifier = Modifier.padding(16.dp)
             ){
                 Image(
